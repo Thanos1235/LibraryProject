@@ -68,7 +68,7 @@ public class Lenders {
         for(Lenders target: lenders){
             if(target.getUsername().equals(username)){
                 target.setLendedbook(TRUE);
-                lenders.set(0, target);
+                lenders.set(i, target);
             }
             i++;
         }
@@ -79,7 +79,7 @@ public class Lenders {
         for(Lenders target: lenders){
             if(target.getUsername().equals(username)){
                 target.setLendedbook(FALSE);
-                lenders.set(0, target);
+                lenders.set(i, target);
             }    
             i++;
         }
